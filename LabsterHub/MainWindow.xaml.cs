@@ -24,7 +24,7 @@ namespace LabsterHub
 
             Application.Current.ShutdownMode = ShutdownMode.OnMainWindowClose;
 
-            ListViewMenu.SelectedIndex = 0;
+            ListViewMenu.SelectedIndex = 1;
             ListViewMenu_SelectionChanged(null, null);
 
         }
@@ -58,6 +58,11 @@ namespace LabsterHub
                     MoveCurosrMenu(index);
                     break;
                 case 1: // Github
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new MolecularTool());
+                    MoveCurosrMenu(index);
+                    break;
+                case 2: // Github
                     Process.Start("https://github.com/Livit");
                     break;
                 default:

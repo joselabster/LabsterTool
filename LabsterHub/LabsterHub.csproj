@@ -88,11 +88,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Atom.cs" />
+    <Compile Include="MolecularTool.xaml.cs">
+      <DependentUpon>MolecularTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MoleculeBuilder.cs" />
     <Compile Include="SettingsData.cs" />
     <Compile Include="ContentDesigerTools.cs" />
     <Compile Include="UserControlInit.xaml.cs">
       <DependentUpon>UserControlInit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="XmlUtils.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -105,6 +111,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MolecularTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControlInit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
