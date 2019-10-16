@@ -31,7 +31,7 @@ namespace LabsterHub
         private void Button_Molecule_Convert_Click(object sender, RoutedEventArgs e)
         {
 
-            var path = @"C:\Users\Labster\Desktop\untitled.cml";
+            var path = @"C:\Users\Jose\Desktop\untitled.cml";
 
             XDocument doc = XDocument.Load(path);
 
@@ -56,7 +56,7 @@ namespace LabsterHub
 
         private void ReplaceInEngine()
         {
-            var path = @"C:\Users\Labster\Labster\Simulations\Simulations\Engine_ALO_Alcohols.xml";
+            var path = @"R:\Labster\Simulations\Simulations\Engine_ALO_Alcohols.xml";
             XDocument document = XDocument.Load(path);
 
             // find element and replace
